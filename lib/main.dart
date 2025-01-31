@@ -1,19 +1,21 @@
+import 'package:comerce_app/views/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(EncommeApp());
+  runApp(NoteApp());
 }
 
-class EncommeApp extends StatelessWidget {
-  const EncommeApp({super.key});
+class NoteApp extends StatelessWidget {
+  const NoteApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 44, 44, 116),
+      theme: ThemeData(
+        fontFamily: 'MyFont',
       ),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(),
     );
   }
 }
